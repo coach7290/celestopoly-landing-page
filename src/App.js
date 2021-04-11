@@ -21,12 +21,12 @@ function App() {
   useEffect(()=>{
     setRandomBackground(backgrounds[randomIndex])
 
-  },[])
+  },[backgrounds,randomIndex])
 
 
   return (
     <div style={{background: `url(${randomBackground})`}} className="App">
-      <a href="https://open.spotify.com/artist/2SWCCQkbhdMgDMKHt2rKhV?si=_PbItQNHRDSSyJPfP5hdJw" target="_blank"><button type="button" class="nes-btn is-error"><span className="number-style">404</span><br/><span className="error-text-style">Error</span></button></a>
+      <a href="https://open.spotify.com/artist/2SWCCQkbhdMgDMKHt2rKhV?si=_PbItQNHRDSSyJPfP5hdJw" target="_blank"><button type="button" className="nes-btn is-error"><span className="number-style">404</span><br/><span className="error-text-style">Error</span></button></a>
       
     </div>
   );

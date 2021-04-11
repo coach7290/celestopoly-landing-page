@@ -10,7 +10,7 @@ import back7 from "./assets/img7.jpg";
 import back8 from "./assets/img8.jpg";
 import back9 from "./assets/img9.jpg";
 import back10 from "./assets/img10.jpg";
-import "nes.css/css/nes.min.css";
+
 
 
 function App() {

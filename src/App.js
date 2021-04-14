@@ -10,6 +10,7 @@ import back7 from "./assets/img7.jpg";
 import back8 from "./assets/img8.jpg";
 import back9 from "./assets/img9.jpg";
 import back10 from "./assets/img10.jpg";
+import spotify from "./assets/spot.png"
 
 
 
@@ -21,12 +22,16 @@ function App() {
   useEffect(()=>{
     setRandomBackground(backgrounds[randomIndex])
 
-  },[backgrounds,randomIndex])
+  },[backgrounds])
 
 
   return (
     <div style={{background: `url(${randomBackground})`}} className="App">
-      <a href="https://open.spotify.com/artist/2SWCCQkbhdMgDMKHt2rKhV?si=_PbItQNHRDSSyJPfP5hdJw" target="_blank"><button type="button" className="nes-btn is-error"><span className="number-style">404</span><br/><span className="error-text-style">Error</span></button></a>
+     <div className="error-message">
+     <h3>404 Error</h3>
+     </div>
+     <a href="https://open.spotify.com/album/63cOhyWSWQg14KRVRFwHrj" target="_blank"><img  className="spotify-logo" src={spotify}></img></a>
+     
       
     </div>
   );
